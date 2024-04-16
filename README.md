@@ -4,7 +4,6 @@ Rapport TP01:
    ![image](https://github.com/ELFAHIM-SANA/ELFAHIMSANA/assets/131165163/06594d1b-2315-422d-8732-259f7e54600a)
 
 2. Créer une implémentation de cette interface
-
    
 ![image](https://github.com/ELFAHIM-SANA/ELFAHIMSANA/assets/131165163/c3d45513-4520-4e2c-a79a-5107a06097d9)
 
@@ -20,7 +19,7 @@ Rapport TP01:
 5. Faire l'injection des dépendances :
       -Par instanciation statique= utilisation de new.
 
-   ![image](https://github.com/ELFAHIM-SANA/ELFAHIMSANA/assets/131165163/08397bae-aed9-45c4-b759-8f1071c7f84a)
+![image](https://github.com/ELFAHIM-SANA/ELFAHIMSANA/assets/131165163/08397bae-aed9-45c4-b759-8f1071c7f84a)
 
 ![image](https://github.com/ELFAHIM-SANA/ELFAHIMSANA/assets/131165163/c9c77af7-b3c0-4566-9d0e-13ede7e63afe)
 
@@ -62,15 +61,59 @@ Rapport TP01:
 
 ![image](https://github.com/ELFAHIM-SANA/ELFAHIMSANA/assets/131165163/5e9a4140-a81b-491d-9e0e-ac9e2fc44812)
 
-        -Version Annotation:
+-Version Annotation:
         
 ![image](https://github.com/ELFAHIM-SANA/ELFAHIMSANA/assets/131165163/7135b801-8bf3-4ea1-a61b-e8009ecee9fc)
 
 ![image](https://github.com/ELFAHIM-SANA/ELFAHIMSANA/assets/131165163/7cfab85f-2f36-45a1-84fa-bf3f7a292436)
 
-         -Injection via constructeur:
+ -Injection via constructeur:
 
 ![image](https://github.com/ELFAHIM-SANA/ELFAHIMSANA/assets/131165163/b32eaf30-5bbe-44d6-a055-df1bc34fd2f6)
 
 ![image](https://github.com/ELFAHIM-SANA/ELFAHIMSANA/assets/131165163/d1e639e2-58c7-4837-b0d1-f19861f360f9)
+
+![image](https://github.com/ELFAHIM-SANA/ELFAHIMSANA/assets/131165163/71fd7471-9e9a-477b-b7a2-50e8ef08940a)
+
+![image](https://github.com/ELFAHIM-SANA/ELFAHIMSANA/assets/131165163/9aaf386f-b154-4249-a11e-d3f6a5a5e7ad)
+
+  Remarques:
+  -- Si on utilise la notation Autowired:
+
+![image](https://github.com/ELFAHIM-SANA/ELFAHIMSANA/assets/131165163/b28e3a8f-7e14-4d28-93b4-ea92b8f9a5c4)
+
+![image](https://github.com/ELFAHIM-SANA/ELFAHIMSANA/assets/131165163/43d7235e-ca65-453f-8361-a3b302434666)
+
+         -----> On aura l'exception suivante ConflictingBeanDefinitionException
+et lorsqu'on fait les modifications suivantes:
+
+![image](https://github.com/ELFAHIM-SANA/ELFAHIMSANA/assets/131165163/aa188cb3-7d6e-45e1-8318-48fb81c6126b)
+
+on aura:
+
+![image](https://github.com/ELFAHIM-SANA/ELFAHIMSANA/assets/131165163/8e298d10-56ef-4d96-8b3e-c8d87d603d1a)
+
+---->Ms avec le constructeur on aura pas de probléme car meme si on a 2 instances il injecte la premiére qui trouve dans le beans 
+              
+On a ajouter une dépendance pour le test:
+
+![image](https://github.com/ELFAHIM-SANA/ELFAHIMSANA/assets/131165163/6430cc57-da83-4df1-8cf4-2af3c166fc15)
+
+Pour tester on a ajouter une classe Calcul pour calculer la somme de 2 nombres.
+
+![image](https://github.com/ELFAHIM-SANA/ELFAHIMSANA/assets/131165163/254dbe0e-3beb-4125-b22f-96a7e30dfffb)
+
+on a creer une classe pour le test:
+
+![image](https://github.com/ELFAHIM-SANA/ELFAHIMSANA/assets/131165163/7146c678-2681-4139-b2b7-652ba0954afa)
+
+![image](https://github.com/ELFAHIM-SANA/ELFAHIMSANA/assets/131165163/f025b46d-c3da-4639-8ed2-68fca4518eb4)
+
+-----Remarque------
+On trouve ici tous les commandes de base sans utiliser l’invit de commande:
+
+![image](https://github.com/ELFAHIM-SANA/ELFAHIMSANA/assets/131165163/c2efe4ae-75ea-4634-8706-94f729323bf5)
+
+ou bien utiliser le terminale et taper les commandes.
+
 
